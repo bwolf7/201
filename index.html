@@ -7,7 +7,11 @@
         My little Webpage
     </title>
     <style>
-
+        .bodyp {
+            border: black 1px solid;
+            background-color: beige;
+            text-align: center;
+        }
     </style>
 </head>
 
@@ -36,26 +40,94 @@
             <button onclick="questions()">Questions</button>
         </li>
     </ul>
-    <p style="color: red;">
-        What is you name?
-    </p>
-    <p style="color: blue;">
-        What is your age?
-    </p>
-    <p style="color: green;">
-        What is your favorite sports team?
-    </p>
-    <p style="color: orange;">
-        Are you a bandwagon?
-    </p>
+
+    <div>
+
+        <h2> A litte about myself</h2>
+
+
+        <h3>Background</h3>
+        <p class="bodyp" id="p1">My name is Brandon Wolf. I am 25 years old orginally
+            from Temecula
+            California.
+            After highschool, I decided
+            to take my talents to the United States Navy in 2016.
+            I enlisted as an Avionics Electronics Technician (AT) where I got stationed in Virginia
+            Beach
+            Virginia. I
+            spendt 5 years there where I quickly picked
+            up rank and ended my time in service as an E6. I saw one deployement on the USS Harry S
+            Truman
+            where I led a
+            group of 10 Sailors to the successful
+            repair of 422 avionics items. I had a rough time transistioning back to civilian life after
+            deployement. It
+            was at that time, I knew I couldnt do it
+            again and began my transition out.</p>
+
+
+        <h3> My experiences since</h3>
+        <p class="bodyp" id="p2">
+            On my transistion out, I decided to use the skillbridge program to better myself for the civilian life.
+            I
+            attended Microsoft Software and
+            Systems Academy where I learned the fundamentals of Microsoft Azure. The importance of a cloud system
+            was
+            clear. I quickly found a new passion
+            in the world of tech. That was refreshing since I thought that drive had been lost. During the class
+            there
+            were a few fields that caught my interest
+            the most. Azures Blockchain service was the top of the list. The ability to have an encrypted
+            peer-to-peer
+            service offers so many possibilities. However,
+            my limited coding background quickly halted my learning drive. I knew if I wanted to pursue this field,
+            I
+            would need to be able to code. I used my military
+            benefits to attend CodeFellows coding bootcamp.
+        </p>
+        <h3> Fun Facts</h3>
+        <p class="bodyp" id="p3">
+            Outside of sitting at my computer, I enjoy going to baseball games. As a SoCal resident, I fell in love
+            with
+            San Diego. The city is the perfect blend of
+            city and beach. I have been going to Padres games since 2013. In the prime of my fandom, I would attend
+            multiple games a week. I have a Padres hat from
+            their 2016 All Star game that I would wear everyday for the last 5 years. Ive seen them at their lowest
+            and
+            have gotten the chance to see them now when
+            they are finally a competitive team.
+
+            I also like to spend time with family and friends. My sister is my bestfriend and together we go to
+            several
+            concerts in the SoCal area.
+        </p>
+        <button onclick="quiz()"> About me quiz</button>
+    </div>
+    <div>
+        <p style="color: red;">
+            What is you name?
+        </p>
+        <p style="color: blue;">
+            What is your age?
+        </p>
+        <p style="color: green;">
+            What is your favorite sports team?
+        </p>
+        <p style="color: orange;">
+            Are you a bandwagon?
+        </p>
+    </div>
 </body>
 
 <footer>
     <p>
-        Footer ph
+        &copy Brandon Wolf
     </p>
 </footer>
 <script>
+    // let welcome = prompt("What is you name?")
+    // alert("Welcome " + welcome + "!")
+
     function questions() {
         let name = prompt("What is your Name?");
         alert("Hello " + name);
@@ -70,6 +142,49 @@
 
         let values = { name, age, team, bandwagon };
         console.log(values)
+    }
+
+    function quiz() {
+        let year = prompt("When did I enlisted in the Navy?");
+        if (year == 2016) {
+            alert("What a great year!")
+        } else {
+            (year !== 2016);
+            alert("Not quite");
+        };
+        let items = prompt("How many avionics items did we fix?");
+        if (items == 422) {
+            alert("Get the birds in the air!")
+        } else {
+            (items !== 422);
+            alert("Not quite");
+        };
+        let service = prompt("What Azure Service did I fall in love with?");
+        if (service.toLowerCase() == "blockchain") {
+            alert("Its the bees knees!")
+        } else {
+            (service.toLowerCase() !== "blockchain");
+            alert("Not quite");
+        };
+        let fav = prompt("What is my favorite sports team?");
+        if (fav.toLowerCase() == "padres") {
+            alert("GO PADRES!")
+        } else {
+            (fav.toLowerCase() !== 'padres');
+            alert("Not quite");
+        };
+        let best = prompt("Who is my best friend?");
+        if (best.toLowerCase() == "sister") {
+            alert("Shes the best!")
+        } else {
+            (best.toLowerCase() !== "sister");
+            alert("Not quite");
+        };
+
+
+        let results = { year, items, service, fav, best };
+        console.log(results)
+
     }
 </script>
 
