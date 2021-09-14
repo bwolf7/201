@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>
+        My little Webpage
+    </title>
+    <style>
+
+    </style>
+</head>
+
+<header>
+
+    <h1 style="background-color: beige;">Class 1 Lab</h1>
+
+    <ul>
+        <li>
+            <nav><button>PH</button></nav>
+        </li>
+        <li>
+            <nav><button>PH</button></nav>
+        </li>
+        <li>
+            <nav><button>PH</button></nav>
+        </li>
+    </ul>
+</header>
+
+<body>
+    <h2> Questions for you</h2>
+    <p> Here are some questions to get to know you. Click the button!</p>
+    <ul>
+        <li>
+            <button onclick="questions()">Questions</button>
+        </li>
+    </ul>
+    <p style="color: red;">
+        What is you name?
+    </p>
+    <p style="color: blue;">
+        What is your age?
+    </p>
+    <p style="color: green;">
+        What is your favorite sports team?
+    </p>
+    <p style="color: orange;">
+        Are you a bandwagon?
+    </p>
+</body>
+
+<footer>
+    <p>
+        Footer ph
+    </p>
+</footer>
+<script>
+    function questions() {
+        let name = prompt("What is your Name?");
+        alert("Hello " + name);
+        let age = prompt("How old are You?");
+        alert(age + "! I'm sorry I asked");
+        let team = prompt("What is your favorite sports Team?");
+        alert("Once a " + team + " fan, always a " + team + " fan");
+        let bandwagon = prompt("Are you a bandwagon?");
+
+        alert("So you are telling me " + name + ". That you are " + age + " years old, a " + team + " fan, and you said " + bandwagon + " to being a bandwagon? Welcome Home!");
+
+
+        let values = { name, age, team, bandwagon };
+        console.log(values)
+    }
+</script>
+
+</html>
