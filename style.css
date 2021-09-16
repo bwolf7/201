@@ -1,0 +1,38 @@
+.bodyp {
+    background-color: #FFF8ED;
+    color: #000000;
+    border: 2px solid #6D6D6D;
+    padding: 9px;
+    margin: 2px;
+    text-align:center;
+    text-decoration: none;
+    text-transform: none;
+    cursor: move;
+    visibility: visible;
+    float: none;
+    border-radius: 25px;
+    box-shadow: 0px 0px 5px #000000;
+    list-style: none;
+    
+}
+
+.container{
+    text-align: center;
+    border: #000000 5px solid;
+}
+
+.button1{
+    text-align: center;
+}
+
+.background{
+    display: inline-block;
+}
+
+.titles{
+    display: inline-block;
+}
+
+#ol1{
+    list-style: none;
+}
