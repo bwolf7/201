@@ -14,7 +14,7 @@ function buttons() {
         citiesGame();
     } else if (game >= 5) {
         ""
-    };
+    }
 }
 //About you
 function questions() {
@@ -135,4 +135,4 @@ function citiesGame() {
     }
 }
 
-//add 2000
+//add year 2000
