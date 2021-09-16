@@ -16,7 +16,7 @@ function buttons() {
         ""
     }
 }
-
+//About you
 function questions() {
     let name = prompt("What is your Name?");
     alert("Hello " + name);
@@ -32,7 +32,7 @@ function questions() {
     let values = { name, age, team, bandwagon };
     console.log(values)
 }
-
+//quiz
 function quiz() {
     let year = prompt("When did I enlisted in the Navy?");
     if (year == 2016) {
@@ -75,12 +75,12 @@ function quiz() {
     console.log(results)
 
 }
+// Number guessing game
 
 function randomNumberGenerator() {
     let correctAnswer = Math.floor(Math.random() * 100) + 1;
     return correctAnswer;
 };
-
 function userGuessingGame(correctAnswer) {
     console.log(correctAnswer)
     let wannaPlay = prompt('Do you want to play a game? (yes or no)');
@@ -108,7 +108,7 @@ function userGuessingGame(correctAnswer) {
         break;
     }
 }
-
+//Cities guessing game
 var cities = ["San Diego", "Miami", "Seattle", "Tampa Bay"]
 
 function citiesGame() {
