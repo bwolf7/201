@@ -14,7 +14,7 @@ function buttons() {
         citiesGame();
     } else if (game >= 5) {
         ""
-    }
+    };
 }
 
 function questions() {
